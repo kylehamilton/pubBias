@@ -2,9 +2,9 @@
 #'
 #' `weightrMeta()` Connects the weightr package to the Metaverse.
 #'
-#' #@param meta a meta-analysis object (e.g. `rma.uni`)
+#' @param meta a meta-analysis object (e.g. `rma.uni`)
 #'
-#' @return a `tbl` with a `listcol`, `meta`, containing the meta-analysis
+#' @return a data frame with infomation passed from weightr containing the meta-analysis
 #' @import weightr
 #' @export
 #' @examples
@@ -25,7 +25,7 @@
 #'
 #' weightrMeta(ma)
 #' }
-weightrMeta <- function(meta, ...) {
+weightrMeta <- function(meta) {
   weightrMeta_yi <- meta$estimate
   weightrMeta_vi <- meta$std.error
   weightfunct(weightrMeta_yi,weightrMeta_vi)

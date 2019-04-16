@@ -4,16 +4,16 @@
 \alias{weightrMeta}
 \title{weightr}
 \usage{
-weightrMeta(meta, ...)
+weightrMeta(meta)
+}
+\arguments{
+\item{meta}{a meta-analysis object (e.g. `rma.uni`)}
 }
 \value{
-a `tbl` with a `listcol`, `meta`, containing the meta-analysis
+a data frame with infomation passed from weightr containing the meta-analysis
 }
 \description{
-`weightrMeta()` Connects the weightr package to the Metaverse
-}
-\details{
-#@param meta a meta-analysis object (e.g. `rma.uni`)
+`weightrMeta()` Connects the weightr package to the Metaverse.
 }
 \examples{
 \dontrun{
